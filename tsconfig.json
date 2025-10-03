@@ -1,0 +1,14 @@
+{
+  "extends": "@react-native/typescript-config",
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["**/node_modules", "**/Pods"],
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@models/*": ["types/*"],
+      "@screens/*": ["screens/*"],
+      "@api/*": ["api/*"],
+      "@navigation/*": ["navigation/*"]
+    }
+  }
+}
